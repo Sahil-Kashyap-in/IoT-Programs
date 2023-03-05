@@ -1,0 +1,18 @@
+// C++ code
+// Blinking of LED using TinkerCAD
+void setup()
+{
+  pinMode(13, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  Serial.println("Blinking of LED using TinkerCAD");
+  digitalWrite(13, HIGH);
+  Serial.println("LED is ON");
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  Serial.println("LED is OFF");
+  delay(1000); 
+}
